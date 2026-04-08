@@ -1,7 +1,7 @@
 [project]
 name = "openenv_customer_support"
 version = "0.1.0"
-description = "OpenEnv Customer Support Environment"
+description = "Customer support OpenEnv environment"
 requires-python = ">=3.10"
 
 dependencies = [
@@ -11,6 +11,9 @@ dependencies = [
     "requests",
     "openai"
 ]
+
+[tool.setuptools.packages.find]
+where = ["app"]
 
 [tool.openenv]
 entrypoint = "app.main:app"
