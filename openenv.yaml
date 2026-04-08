@@ -1,0 +1,12 @@
+name: customer-support-env
+description: Customer support simulation
+
+entrypoint: app.main:app
+
+tasks:
+  - id: easy
+    description: Order tracking
+  - id: medium
+    description: Refund handling
+  - id: hard
+    description: Angry escalation
