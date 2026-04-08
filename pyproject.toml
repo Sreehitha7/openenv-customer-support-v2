@@ -1,7 +1,9 @@
 [project]
-name = "openenv-customer-support"
+name = "openenv_customer_support"
 version = "0.1.0"
-description = "Customer support OpenEnv environment"
+description = "OpenEnv Customer Support Environment"
+requires-python = ">=3.10"
+
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -9,6 +11,9 @@ dependencies = [
     "requests",
     "openai"
 ]
+
+[tool.openenv]
+entrypoint = "app.main:app"
 
 [build-system]
 requires = ["setuptools", "wheel"]
